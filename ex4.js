@@ -1,20 +1,24 @@
-let yellowBox = document.querySelector(".yellow");
+let container = document.querySelector('.container');
+let yellow = document.querySelector('.yellow');
+let green = document.querySelector('.green');
+let gray = document.querySelector('.gray');
+yellow.addEventListener('mouseenter',function() {
+    container.style.backgroundColor = 'yellow';
+});
+yellow.addEventListener('mouseleave',function() {
+    container.style.backgroundColor = 'white';
+});
 
-let greenBox = document.querySelector(".green");
+green.addEventListener('mouseenter',function() {
+    container.style.backgroundColor = 'green';
+});
+green.addEventListener('mouseleave',function() {
+    container.style.backgroundColor = 'white';
+});
 
-let grayBox = document.querySelector(".gray");
-
-// Hover ô vàng
-yellowBox.onmouseover = function () {
-    document.body.style.backgroundColor = "yellow";
-};
-
-// Hover ô xanh
-greenBox.onmouseover = function () {
-    document.body.style.backgroundColor = "green";
-};
-
-// Hover ô xám
-grayBox.onmouseover = function () {
-    document.body.style.backgroundColor = "gray";
-};
+gray.addEventListener('mouseenter',function() {
+    container.style.backgroundColor = 'gray';
+});
+gray.addEventListener('mouseleave',function() {
+    container.style.backgroundColor = 'white';
+});
